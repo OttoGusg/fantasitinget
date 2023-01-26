@@ -1,9 +1,8 @@
-from spiller 
+from spiller import Spiller 
 
 class Politiker:
     def __init__(self, navn):
         self.navn = navn
-        self.regjering = True or False 
         self.pris = 20
         self.poengsum = 10
         self.saker = []
