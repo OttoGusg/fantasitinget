@@ -1,7 +1,11 @@
+from politiker import Politiker
+
 class Spiller:
     def __init__(self, brukernavn):
         self.brukernavn = brukernavn
         self.stemmer = 100 
+        self.parti: None
+        self.partileder: None 
         self.politikere = []
         self.poengsum = 0
 
@@ -17,8 +21,13 @@ def kjøp_politiker(self, ny_politiker):
 def hent_politikere(self):
     return self._politikere
 
-def selg_politiker(self):
-    pass
+def selg_politiker(self, fjern_politiker):
+    for politiker in self.politikere:
+        if fjern_politiker == self.politikere[politiker]:
+            self.politikere.remove(fjern_politiker)
+            return f'{fjern_politiker} er fjernet!'
+    else:
+        return f'Du har ikke {fjern_politiker} og de kan derfor ikke fjernes'
 
 def beregn_poengsum(self):
     return self.poengsum

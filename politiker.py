@@ -1,4 +1,4 @@
-from spiller import Spiller 
+from spiller import Spiller
 
 class Politiker:
     def __init__(self, navn):
