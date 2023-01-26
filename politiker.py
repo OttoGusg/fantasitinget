@@ -1,15 +1,22 @@
 class Politiker:
-    def __init__(self, stemmeprosent:int, regjering:True or False, pris:int,poengsum:int, saker:list):
-        self.stemmeprosent = stemmeprosent
-        self.regjering = regjering
-        self.pris = pris
-        self.poengsum = poengsum
+    def __init__(self, navn):
+        self.navn = navn
+        self.stemmeprosent = 0
+        self.regjering = True or False 
+        self.pris = 20
+        self.poengsum = 10
         self.saker = []
         
+    def hent_poengsum(self):
+        return self.poengsum
+
+    def hent_pris(self):
+        return self.pris
+
     def sak_sukess(self):
-        pass
+        self.poengsum += 50
 
     def sak_fiasko( self):
-        pass
+        self.poengsum -= 50
 
 
