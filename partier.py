@@ -1,4 +1,4 @@
-
+from politiker import Politiker 
 
 class Partier:
     def __init__(self, navn):
