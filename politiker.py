@@ -1,7 +1,8 @@
+from spiller 
+
 class Politiker:
     def __init__(self, navn):
         self.navn = navn
-        self.stemmeprosent = 0
         self.regjering = True or False 
         self.pris = 20
         self.poengsum = 10
